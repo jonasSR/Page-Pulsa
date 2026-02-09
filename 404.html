@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecionando...</title>
+    <script type="text/javascript">
+      // Esse script redireciona o erro 404 de volta para o index.html 
+      // mantendo a rota que o usuário tentou acessar.
+      var pathSegment = window.location.pathname;
+      window.location.replace(
+        window.location.protocol + "//" + window.location.hostname + (window.location.port ? ":" + window.location.port : "") + "/?path=" + pathSegment
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
